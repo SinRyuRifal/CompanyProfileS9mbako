@@ -1,0 +1,639 @@
+/* variabel */
+:root {
+    --pr-color: #22c1a3;
+    --sc-color: #eaf785;
+    --tr-color: #229e87;
+    --fr-color: #85db94;
+    --bg-color: #e4f9f5;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --h3-font-size: 24px;
+    --h4-font-size: 16px;
+    --small-font-size: 14px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;  
+    background-color: var(--bg-color);
+}
+
+* {
+    z-index: 2;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 3;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+.button-secondary {
+    width: 133px;
+    height: 40px;
+    background-color: #fff;
+    color: var(--pr-color);
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.button-primary {
+    width: 133px;
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+
+.navbar .nav-item .nav-link {
+    position: relative;
+    margin-left: 20px;
+}
+
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:active {
+    color: white;
+}
+
+
+.navbar .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navbar .nav-item .nav-link:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 0 0 ;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--pr-color);
+    border-radius: 0 0 0 0;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link{
+    color: #000;
+    border: none;
+    border-radius: 0 0 0 0;
+}
+
+
+/* Navbar Color */
+.nav-color {
+    background-color: var(--pr-color);
+    transition: all ease-in-out .3s;
+}
+
+.bg-transparent {
+    transition: all ease-in-out .3s;
+}
+
+
+
+
+
+/* Hero Section */
+.accsent-img{
+    z-index: 1;
+}
+
+.img-hero{
+    z-index: 1;
+}
+
+
+#hero {
+    background: linear-gradient(160deg, var(--pr-color) ,var(--sc-color) );
+    height: 100vh;
+    width: 100%;    
+}
+
+.img-hero {
+    height: 90%;
+}
+
+.hero-tagline h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 72px;
+}
+
+.hero-tagline h2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 5px;
+    line-height: 30px;
+    width: 85%;
+}
+
+.hero-tagline p{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 60px;
+    margin-top: 5px;
+    line-height: 30px;
+    width: 85%;
+}
+
+.button-lg-primary {
+    width: 237px;
+    height: 70px;
+    background-color: #fff;
+    color: var(--pr-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* text */
+.text-green {
+    color: var(--pr-color);
+    font-size: var(--h2-font-size);
+}
+
+section .section-sub-title {
+    font-size: var(--h4-font-size);
+}
+
+/* News */
+
+.news-section {
+    background-color: var(--fr-color);
+}
+
+.news-section .card .card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and(max-width: 768px){
+    .news-section .card .card-img-top {
+        height: 100px;
+    }
+}
+/* layanan section */
+
+#layanan{
+    padding: 100px 0;
+}
+
+.judul{
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--pr-color);
+}
+
+.sub-title{
+    font-size: 18px;
+    color: black;
+}
+
+.card-layanan {
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background-color : white ;
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+
+    transition: all .1s ease-in;
+
+}
+
+.circle-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--pr-color);
+    border-radius: 50%;
+
+    transition: all .1s ease-in;
+}
+
+
+.card-layanan h3 {
+    color: var(--pr-color);
+    font-size: 24px;
+
+    transition: all .2s ease-in;
+
+}
+
+.card-layanan p {
+    color: black;
+    font-size: 14px;
+
+    transition: all .2s ease-in;
+}
+
+/* Layanan Hover*/
+.card-layanan:hover {
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background : linear-gradient(160deg, var(--pr-color), var(--fr-color));
+    padding: 40px;
+    box-shadow: 0 0 7px 3px var(--tr-color);
+    transition: all .2s ease-in;
+
+}
+
+.card-layanan:hover .circle-icon {
+    background-color: white;
+    transition: all .2s ease-in;
+}
+
+.card-layanan:hover h3 {
+    color: white;
+    font-size: 24px;
+    transition: all .2s ease-in;
+
+}
+
+
+.card-layanan:hover p {
+    color: white;
+    font-size: 14px;
+
+    transition: all .2s ease-in;
+}
+
+
+
+/* Search Section */
+#search {
+    background-image: url(../assets/img/background7.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#search h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+
+}
+
+#search p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.input-cari{
+    height: 88px;
+}
+
+.input-cari:focus{
+    border: none;
+}
+
+
+.input-cari .button-secondary{
+    width: 200px;
+    height: 88px;
+    background-size: rgba(255,255,255,0.8);
+    color: var(--pr-color);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0 0 0 10px;
+}
+
+.input-cari .btn-cari {
+    height: 88px;
+    width: 88px;
+    background-color: var(--pr-color);
+    color: #fff;
+    border: none;
+    font-size: 36px;
+    font-weight: 500;
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* dropdown menu */
+.input-cari .dropdown-menu {
+    max-height: 150px; 
+    overflow-y: auto;
+}
+
+/* Produk Terlaris */
+
+
+.card-rekomen {
+    height: 500px;
+    width: 95%;
+    border: none;
+}
+.card-spek .detail-produk {
+    height: 30px;
+    width: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+}
+
+.card-body h4 {
+    color: black;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: .8rem;
+}
+
+.card-body p{
+    color: rgb(105, 105, 105);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card-rekomen:hover{
+    background : linear-gradient(160deg, var(--pr-color), var(--tr-color), var(--sc-color));
+    box-shadow: 5px 5px 20px var(--tr-color);
+    transition: all ease-in-out .3s;
+}
+
+.card-rekomen:hover .card-body h4 {
+    color: white;
+    transition: all ease-in-out .3s;
+}
+
+.card-rekomen:hover .card-body p {
+    color: white;
+    transition: all ease-in-out .3s;
+}
+
+.card-spek {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    background-color: white;
+}
+
+.card-spek span {
+    font-weight: 500;
+    margin-top: 18px;
+    color: black;
+}
+
+.card-spek p{
+    font-size: 12px;
+    color: black;
+}
+
+/* cabang */
+.img-cabang {
+    width: 340px;
+    height: 480px;
+}
+
+/* Card Cabang */
+
+.button-cabang {
+    width: 238px;
+    height: 63px;
+    background-color: var(--pr-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+#cabang h2 {
+    color: var(--pr-color);
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.card-cabang h5 {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.card-cabang span {
+    color: white;
+    font-size: 14px;
+}
+
+.card-cabang h6 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-cabang .btn-cabang {
+    background-color: var(--pr-color);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.card-cabang .overlay {
+    background-color: rgba( 0, 0, 0, 0);
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+
+.card-cabang .overlay:hover {
+    background-color: rgba( 0, 0, 0, 0.6);
+    opacity: 1;
+
+}
+
+.button-arrow-left {
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--pr-color);
+    padding: 0;
+}
+
+.button-arrow-right {
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--pr-color);
+    padding: 0;
+}
+
+#contact {
+    background-image: url(../assets/img/bgkontak.png);
+    margin-top: 158px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contact .overlay {
+    background: rgba(0,0,0,0.5);
+}
+
+#contact .container {
+    padding: 148px 0 148px 0;
+}
+
+#contact h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: white;
+    width: 400px;
+}
+
+#contact h6 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: white;
+    margin-top: 19px 0 14px 0;
+}
+
+.kontak a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    width: 332px;
+    display: inline-block;
+}
+
+.links9mbako {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.card-contact {
+    width: 100%;
+    height: 442px;
+    background: white;
+    border-radius: 5px;
+    padding: 52px 48px;
+}
+
+.card-contact h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--pr-color);
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+/* .form-control {
+    background: #c4c4c4;
+    height: 75px !important;
+    border-radius: 0;
+} */
+
+.form-floating label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #717171;
+}
+
+.button-kontak {
+    width: 100%;
+    height: 75px;
+    background-color: var(--pr-color);
+    border: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 270px;
+    background: black;
+}
+
+.copyright {
+    bottom: 1%;
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+footer a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;  
+    text-decoration: none;
+    
+}

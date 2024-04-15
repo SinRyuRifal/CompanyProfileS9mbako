@@ -1,0 +1,133 @@
+@media screen and (max-width : 922px) {
+    .input-cari .button-secondary {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .img-hero {
+        width: 60%;
+        height: auto;
+    }
+
+    #rekomendasi {
+        margin-top: 100px;
+    }
+
+    .button-cabang {
+        width: 100%;
+    }
+
+    #contact h3 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .card-contact {
+        width: 100%;
+        height: auto;
+        padding: 52px 48px;
+    }
+    
+    .card-contact h2 {
+        font-size: 26px;
+        line-height: 42px;
+        color: var(--pr-color);
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    .copyright {
+        font-size: 8px;
+        line-height: 21px;
+    }
+
+    .input-cari .button-secondary{
+        width: 50%;
+        height: 60px;
+        border-radius: 0;
+
+    }
+
+    .input-cari .btn-cari{
+        width: 15%;
+        height: 60px;
+        border-radius: 0 0 10px 0;
+    }
+
+    .input-cari .btn-cari svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .input-cari .form-control{
+        width: 20%;
+        height: 60px;
+    }
+
+    footer a{
+        margin-right: 5px;
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .hero-tagline h1 {
+        line-height: 52px;
+    }
+
+    .img-hero {
+        width: 70%;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .sub-title {
+        font-size: 16px;
+
+    }
+
+    .card-layanan {
+        margin: 15px 0;
+    }
+
+    #search h2 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .sub-search {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .input-cari .button-secondary{
+        width: 50%;
+        height: 60px;
+        border-radius: 0;
+
+    }
+
+    .input-cari .btn-cari{
+        width: 15%;
+        height: 60px;
+        border-radius: 0 0 10px 0;
+    }
+
+    .input-cari .btn-cari svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .input-cari .form-control{
+        width: 20%;
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-width : 350px) {
+
+}
